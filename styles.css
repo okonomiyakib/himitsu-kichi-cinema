@@ -318,13 +318,11 @@ p {
 }
 
 .character-scene {
-  aspect-ratio: 1 / 1.08;
+  aspect-ratio: 4 / 3;
 }
 
 .character-scene img {
-  object-position: 88% 94%;
-  transform: scale(3.05);
-  transform-origin: 88% 94%;
+  object-position: 50% 46%;
 }
 
 .details {
