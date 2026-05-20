@@ -364,6 +364,176 @@ p {
   font-weight: 800;
 }
 
+.howto {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(240, 138, 55, 0.16), transparent 18rem),
+    radial-gradient(circle at 90% 24%, rgba(255, 210, 122, 0.12), transparent 16rem),
+    linear-gradient(180deg, rgba(8, 14, 29, 0.1), rgba(7, 9, 18, 0.38));
+}
+
+.howto-ticket {
+  position: relative;
+  overflow: hidden;
+  padding: 1.15rem;
+  border: 1px solid rgba(80, 48, 28, 0.38);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 244, 220, 0.96), rgba(244, 222, 184, 0.94)),
+    repeating-linear-gradient(45deg, rgba(92, 58, 33, 0.05) 0 2px, transparent 2px 7px);
+  color: #24180f;
+  box-shadow: var(--shadow);
+}
+
+.howto-ticket::before {
+  position: absolute;
+  inset: 0.58rem;
+  pointer-events: none;
+  content: "";
+  border: 1px solid rgba(36, 24, 15, 0.28);
+  border-radius: 6px;
+}
+
+.howto-ticket::after {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.65rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  pointer-events: none;
+  content: "";
+  background:
+    radial-gradient(circle, rgba(204, 79, 44, 0.5) 0 18%, transparent 19%),
+    radial-gradient(circle at 50% 12%, rgba(204, 79, 44, 0.7) 0 13%, transparent 14%),
+    radial-gradient(circle at 88% 50%, rgba(204, 79, 44, 0.7) 0 13%, transparent 14%),
+    radial-gradient(circle at 50% 88%, rgba(204, 79, 44, 0.7) 0 13%, transparent 14%),
+    radial-gradient(circle at 12% 50%, rgba(204, 79, 44, 0.7) 0 13%, transparent 14%);
+  opacity: 0.5;
+}
+
+.howto-head {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.howto-head h2 {
+  display: inline-flex;
+  margin-bottom: 0.6rem;
+  padding: 0.18rem 1.2rem 0.32rem;
+  background: #24180f;
+  color: #fff4dc;
+  font-size: clamp(1.85rem, 8.5vw, 2.9rem);
+  line-height: 1.25;
+  text-shadow: none;
+}
+
+.howto-head p,
+.qr-area p {
+  margin: 0;
+  color: rgba(36, 24, 15, 0.74);
+  font-weight: 800;
+}
+
+.label--paper {
+  border-color: rgba(36, 24, 15, 0.18);
+  background: rgba(36, 24, 15, 0.08);
+  color: #6b3a1a;
+}
+
+.qr-area {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.7rem;
+  justify-items: center;
+  margin: 1rem 0 1.2rem;
+  padding: 1rem;
+  border: 1px dashed rgba(36, 24, 15, 0.34);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.qr-placeholder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.38rem;
+  width: 7.5rem;
+  aspect-ratio: 1;
+  padding: 0.7rem;
+  border: 2px solid #24180f;
+  border-radius: 8px;
+  background: #fffaf0;
+}
+
+.qr-placeholder span {
+  border: 2px solid #24180f;
+  background:
+    linear-gradient(90deg, #24180f 0 28%, transparent 28% 44%, #24180f 44% 62%, transparent 62%),
+    linear-gradient(#24180f 0 22%, transparent 22% 42%, #24180f 42% 68%, transparent 68%);
+}
+
+.step-list {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0;
+  margin: 0 0 1.35rem;
+  padding: 0;
+  list-style: none;
+}
+
+.step-list li {
+  display: grid;
+  grid-template-columns: 2.15rem 2.35rem 1fr;
+  gap: 0.72rem;
+  align-items: center;
+  padding: 0.92rem 0;
+  border-top: 1px dashed rgba(36, 24, 15, 0.42);
+  color: #24180f;
+  font-size: 1.02rem;
+  font-weight: 900;
+  line-height: 1.55;
+}
+
+.step-list li:last-child {
+  border-bottom: 1px dashed rgba(36, 24, 15, 0.42);
+}
+
+.step-num {
+  display: inline-grid;
+  place-items: center;
+  width: 2.05rem;
+  height: 2.05rem;
+  border-radius: 50%;
+  background: #24180f;
+  color: #fff4dc;
+  font-family: "Zen Old Mincho", "Noto Sans JP", serif;
+  font-size: 1.08rem;
+}
+
+.step-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  color: #24180f;
+}
+
+.step-icon svg {
+  width: 2.05rem;
+  height: 2.05rem;
+  fill: currentColor;
+}
+
+.howto-ticket .button {
+  position: relative;
+  z-index: 1;
+  color: #170d08;
+}
+
 .entry {
   min-height: 86svh;
   text-align: center;
